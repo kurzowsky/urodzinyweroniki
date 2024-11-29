@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urodzinowa Laurka</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .header {
+            font-size: 2.5em;
+            color: #4caf50;
+        }
+        .wish {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .joke {
+            font-size: 1.2em;
+            margin-top: 30px;
+            color: #ff6347;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">🎉 Urodzinowa Laurka 🎉</div>
+
+        <div class="wish">
+            <button class="button" onclick="displayWish()">Pokaż życzenia</button>
+        </div>
+
+        <div id="greeting" class="wish"></div>
+
+    </div>
+
+    <script>
+        function displayWish() {
+            // Imię jest teraz na stałe - "Weronika"
+            var name = "Weronika";
+
+            // Wyświetlenie życzeń urodzinowych
+            var greeting = "Wszystkiego najlepszego z okazji urodzin, " + name + "!\n";
+            greeting += "Życzę Ci dni pełnych radości, miłości oraz spełnienia wszystkich marzeń.\n";
+            greeting += "Niech każdy dzień przynosi Ci coś pięknego, a szczęście nigdy Cię nie opuszcza.\n";
+            greeting += "Zdrowia, sukcesów i dużo uśmiechu na co dzień!\n";
+            greeting += "KUBA";
+
+            document.getElementById('greeting').textContent = greeting;
+        }
+    </script>
+
+</body>
+</html>
